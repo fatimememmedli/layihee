@@ -1,0 +1,20 @@
+section#userTable{
+    padding: 50px 0 ;
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        .head{
+            padding: 20px;
+            p.users{
+                font-size: 30px;
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+        .table{
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

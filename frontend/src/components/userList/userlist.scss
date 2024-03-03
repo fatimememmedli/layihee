@@ -1,0 +1,135 @@
+section#userList {
+  width: 45%;
+  margin: 0px auto;
+  padding: 45px 0;
+  padding-top: 100px;
+  font-family: "inter";
+  .head {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    font-weight: 600;
+  }
+  .users {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    .user {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px 10px;
+      background-color: rgb(242, 246, 250);
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      .left {
+        cursor: pointer;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .profile {
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .username-firtlastName {
+          display: flex;
+          flex-direction: column;
+          .username {
+            font-weight: 600;
+            font-size: 15px;
+          }
+          .firstLastName {
+            font-size: 14px;
+            color: rgb(115, 115, 115);
+          }
+        }
+      }
+      .right {
+        button {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 8px;
+          background-color: rgb(2, 133, 199);
+          color: white;
+          font-weight: 500;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  section#userList {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  section#userList {
+    width: 80%;
+    .users {
+      .user {
+        width: 93%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  section#userList {
+    width: 80%;
+    .users {
+      padding: 13px;
+
+      .user {
+        width: 93%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  section#userList {
+    width: 90%;
+    .users {
+      padding: 10px 5px;
+      .user {
+        width: 93%;
+        .left {
+          .profile {
+            width: 45px;
+            height: 45px;
+          }
+          .username-firtlastName {
+            .username {
+              font-size: 12px;
+            }
+            .firstLastName {
+              font-size: 12px;
+            }
+          }
+        }
+        .right {
+          button {
+            padding: 7px 13px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(2, 133, 199);
+            color: white;
+            font-weight: 500;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

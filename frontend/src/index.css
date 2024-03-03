@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter";
+}
+body {
+  background-color: rgb(247, 249, 250);
+}
+.swal2-container {
+  z-index: 99999 !important;
+}

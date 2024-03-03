@@ -1,0 +1,155 @@
+section#descriptionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 40px 0;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    .input-label-error {
+      display: flex;
+      gap: 20px;
+      .label {
+        min-width: 100px;
+        display: flex;
+        justify-content: flex-end;
+        // align-items: center;
+        label {
+          font-size: 14px;
+        }
+      }
+      .input-errormsg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        input {
+          min-width: 200px;
+          padding: 7px 7px;
+          border-radius: 7px;
+          outline: none;
+          border: none;
+          background-color: rgb(242, 246, 250);
+        }
+        .error {
+          font-size: 12px;
+          color: red;
+        }
+        textarea {
+          max-width: 200px;
+          outline: none;
+          min-width: 200px;
+          border: none;
+          background-color: rgb(242, 246, 250);
+          border-radius: 7px;
+          padding: 6px 6px;
+        }
+      }
+    }
+    button {
+      padding: 7px 28px;
+      width: max-content;
+      font-size: 13px;
+      font-weight: 500;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+      border: none;
+      border-radius: 7px;
+      background-color: rgb(2, 133, 199);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#descriptionForm {
+    width: 90%;
+    padding: 30px 0;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+
+      .input-label-error {
+        display: flex;
+        gap: 20px;
+        .label {
+          min-width: 60px;
+          min-width: 60px;
+          display: flex;
+          justify-content: flex-end;
+          // align-items: center;
+          label {
+            font-size: 13px;
+          }
+        }
+        .input-errormsg {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 3px;
+          input {
+            min-width: 150px;
+            max-width: 150px;
+            padding: 7px 7px;
+          }
+          .error {
+            font-size: 12px;
+          }
+          textarea {
+            max-width: 150px;
+            min-width: 150px;
+          }
+        }
+      }
+     
+    }
+  }
+}
+@media screen and (max-width: 373px) {
+    section#descriptionForm {
+      form {
+        .input-label-error {
+          display: flex;
+          gap: 20px;
+          .label {
+            min-width: 50px;
+            display: flex;
+            justify-content: flex-end;
+            // align-items: center;
+            label {
+              font-size: 11px;
+            }
+          }
+          .input-errormsg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+            input {
+              min-width: 110px;
+              max-width: 110px;
+              padding: 7px 7px;
+            }
+            .error {
+              font-size: 11px;
+            }
+            textarea {
+              min-width: 110px;
+            }
+          }
+        }
+       
+      }
+    }
+  }
+//   768px

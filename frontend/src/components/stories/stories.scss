@@ -1,0 +1,180 @@
+section#stories {
+  .swiper {
+    width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+  }
+  .swiper-button-next {
+    position: absolute;
+    right: 0px;
+    bottom: calc(65px / 2);
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    color: rgb(76, 86, 99);
+    overflow: hidden;
+    font-size: 10px
+    ;
+  }
+  .swiper-button-next::after {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .swiper-button-prev {
+    position: absolute;
+    left: 0;
+    bottom: calc(65px / 2);
+
+    z-index: 20;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    color: rgb(76, 86, 99);
+    overflow: hidden;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  .swiper-button-prev::after {
+    position: absolute;
+    z-index: 20;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .swiper-slide {
+    min-width: 65px;
+    text-align: center;
+    font-size: 18px;
+    // background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .create {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(225, 232, 240);
+      border: 2px dashed rgb(202, 212, 224);
+      cursor: pointer;
+      .fa-camera {
+        font-size: 20px;
+        color: rgb(76, 86, 99);
+      }
+    }
+    .story {
+      width: 65px;
+      height: 65px;
+      overflow: hidden;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .border {
+      border: 5px solid white;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media screen and (max-width: 1280px) {
+    .swiper {
+      width: 70%;
+    }
+  }
+  @media screen and (max-width: 474px) {
+    .swiper {
+      width: 95%;
+    }
+  }
+}
+.css-1wnsr1i {
+  min-width: 100%;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.907) !important;
+  min-height: 100%;
+  padding: 0!important;
+  position: relative;
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+  }
+  .next {
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 15px);
+    z-index: 10;
+
+  }
+  .prev{
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 15px);
+    z-index: 10;
+  }
+  .close{
+    position: absolute;
+    font-size: 40px;
+    right: 30px;
+    top: 10px;
+    z-index:10;
+  }
+}
+@media screen and (max-width: 600px) {
+  .css-1wnsr1i {
+    min-width: 100%;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.61) !important;
+    min-height: 100%;
+    padding: 0!important;
+    position: relative;
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      border-radius: 50%;
+      color: white;
+      font-size: 30px;
+    }
+    .next {
+      position: absolute;
+      right: 10px;
+      top: calc(50% - 15px);
+      z-index: 10;
+  
+    }
+    .prev{
+      position: absolute;
+      left: 10px;
+      top: calc(50% - 15px);
+      z-index: 10;
+    }
+    .close{
+      position: absolute;
+      font-size: 40px;
+      right: 2px;
+      top: 2px;
+      z-index:10;
+    }
+  }
+}

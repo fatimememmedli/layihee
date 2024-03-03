@@ -1,0 +1,49 @@
+.SideBarAdmin{
+    display: none;
+    background-color: rgb(33,43,54);
+    color: white;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+   
+    .head{
+        cursor: pointer;
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(140,153,166);
+        .text{
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .fa-xmark{
+            font-size: 30px;
+        }
+    }
+    .sections{
+        display: flex;
+        flex-direction: column;
+        .section{
+            display: flex;
+            gap: 20px;
+            transition: 0.1s;
+            border-radius: 10px;
+            padding: 20px 20px;
+            align-items: center;
+            cursor: pointer;
+            .svg-inline--fa{
+                font-size: 25px;
+                .dashboard{
+                    font-size: 20px;
+                }
+            }
+        }
+        .section:hover{
+            background-color:rgba(140, 153, 166, 0.562) ;
+        }
+    }
+}
+.displayBlock{
+    display: block;
+}

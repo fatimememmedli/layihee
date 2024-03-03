@@ -1,0 +1,67 @@
+section#invites {
+  display: flex;
+  gap: 40px;
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+  p.head{
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+  }
+  .select {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    label {
+      text-align: center;
+      font-size: 16px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    select {
+      min-width: 200px;
+      padding: 7px 7px;
+      border-radius: 7px;
+      outline: none;
+      border: none;
+      background-color: rgb(242, 246, 250);
+      .option {
+        min-width: 200px;
+        padding: 7px 10px;
+        border-radius: 7px;
+        outline: none;
+        border: none;
+        background-color: rgb(242, 246, 250);
+      }
+    }
+  }
+  button {
+    padding: 7px 28px;
+    width: max-content;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(2, 133, 199);
+  }
+}
+@media screen and (max-width: 480px) {
+  section#invites {
+    width: 90%;
+    .select {
+      flex-direction: column;
+
+      label {
+        font-size: 14px;
+      }
+    }
+  }
+}
