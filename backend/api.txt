@@ -1,0 +1,27 @@
+{
+  "username": "kenan",
+  "firstName": "Kenan",
+  "lastName": "Memmedov",
+  "password": "kenan",
+  "profileImage": "https://demo.foxthemes.net/socialite-v3.0/assets/images/avatars/avatar-lg-4.jpg",
+  "email": "kenan@gmail.com",
+  "stories": [
+    {
+      "id": "2345wasdasdaqwe34esd677sd8",
+      "imgSRC": "https://getuikit.com/docs/images/photo.jpg",
+      "title": ":)"
+    }
+  ],
+  "posts": [
+    {
+      "id": "asd12wedygwqy123s34",
+      "imgSRC": "https://getuikit.com/docs/images/photo.jpg",
+      "title": "salam :)"
+    },
+    {
+      "id": "dskfas63456fgh56asd6sdsf234",
+      "imgSRC": "https://demo.foxthemes.net/socialite-v3.0/assets/images/avatars/avatar-lg-2.jpg",
+      "title": ":) "
+    }
+  ]
+}
